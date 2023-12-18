@@ -1,0 +1,24 @@
+[build-system]
+requires = [
+  "setuptools>=40.8",
+  "cython>=3.0.6",
+]
+
+[project]
+name = "LipiTestModule"
+version = "0.0.1"
+authors = [
+  {name="Filipi565"},
+]
+description = "description"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Source = "https://github.com/Filipi565/python-module-with-cython-source"
+Issues = "https://github.com/Filipi565/python-module-with-cython-source/issues"
