@@ -15,10 +15,10 @@ package_separator = "."
 
 #region Functions
 
-ListOfStrings = list
+ListOfExtesions = list
 
 def get_c_files(packages):
-    values = ListOfStrings()
+    values = ListOfExtesions()
 
     for package in packages:
         path = package.replace(package_separator, os.sep)
@@ -35,7 +35,7 @@ def get_c_files(packages):
     return values
 
 def get_pyx_files(packages):
-    values = ListOfStrings()
+    values = ListOfExtesions()
 
     for package in packages:
         path = package.replace(package_separator, os.sep)
@@ -56,7 +56,7 @@ def package_data_generator(packages, *types):
 
     for package in packages:
         package = package.replace("/", os.extsep).replace("\\", os.extsep)
-        values[package] = ListOfStrings()
+        values[package] = []
         for type in types:
             values[package].append(f"*.{type}")
     
